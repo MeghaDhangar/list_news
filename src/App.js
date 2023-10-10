@@ -1,11 +1,13 @@
 
 import './App.css';
 import './index.css'
-import NewListt from './NewListt';
+import NewListt from './components/NewListt';
 function App() {
   return (
     <div className="App">
-       <NewListt/>
+      <NewListt/> 
+
+      {/* <NewListt/> */}
     </div>
   );
 }
