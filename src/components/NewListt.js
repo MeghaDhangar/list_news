@@ -65,5 +65,4 @@ function NewsList() {
         </div>
     );
 }
-
 export default NewsList;
