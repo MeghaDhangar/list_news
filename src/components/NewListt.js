@@ -14,7 +14,8 @@ function NewsList() {
         const fetchData = async () => {
             try {
                 const response = await axios.get(
-                    `https://newsapi.org/v2/everything?q=apple&from=2023-10-06&to=2023-10-06&sortBy=popularity&apiKey=dc47ddd5818f498d9a685c776e29b47a`
+                    `https://newsapi.org/v2/everything?q=tesla&from=2024-03-29&sortBy=publishedAt&apiKey=dc47ddd5818f498d9a685c776e29b47a`
+                    
                 );
                 const data = response.data.articles;
                 setNewsData(data);
@@ -41,7 +42,7 @@ function NewsList() {
     const searchNews = async () => {
         try {
             const response = await axios.get(
-                `https://newsapi.org/v2/everything?q=${searchdata}&from=2023-10-06&to=2023-10-06&sortBy=popularity&apiKey=dc47ddd5818f498d9a685c776e29b47a`
+                `https://newsapi.org/v2/everything?q=${searchdata}&from=2024-04-28&to=2024-04-28&sortBy=popularity&apiKey=dc47ddd5818f498d9a685c776e29b47a`
             );
             const data = response.data.articles;
             setNewsData(data);
